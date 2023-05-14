@@ -7,7 +7,7 @@
 #dino {
     width: 50px;
     height: 50px;
-    background-image: url(img/dino.png);
+    background-image: url(img/png-transparent-tyrannosaurus-dinosaur-s-internet-access-dinosaur-game-angle-white-thumbnail.png);
     background-size:  50px 50px;
     position: relative;
      top: 150px;
@@ -15,12 +15,46 @@
 #cactus {
 width: 20px;
 height: 40px;
-background-image: url(img/cacti---cacti2.png);
+background-image: url(img/cactus.png);
 background-size: 20px 40px;
 position: relative;
 top: 110px;
 left: 580px;
-animation: cactusMov 1s infinite  linear;
+animation: cactusMov 2s infinite linear;
+}
+
+#cloud{
+    width: 80px;
+    height: 60px;
+    background-image: url(img/Cloud.png);
+        background-size: 80px 60px;
+        position: relative;
+        top: -100px;
+        left: 580px;
+        animation: cloudMov 5s infinite linear;
+}
+
+#bird{
+    width: 50px;
+        height: 20px;
+        background-image: url(img/Chrome_Pterodactyl.png);
+        background-size: 50px 20px;
+        position: relative;
+        top: -10px;
+        left: 580px;
+        animation: cloudMov 3s infinite linear;
+    }
+
+
+@keyframes cloudMov {
+    0% {
+        left: 580px;
+
+    }
+
+    100% {
+        left: -20px;
+    }
 }
 
 @keyframes cactusMov{
@@ -34,22 +68,24 @@ animation: cactusMov 1s infinite  linear;
 }
 
 .jump {
-    animation: jump 1s  linear;
+    animation: jump 0.3s linear;
 }
 
 @keyframes jump {
     0% {
         top: 150px;
-
     }
 
      30% {
-         top: 130px;
-    
+         top: 90px;
+     }
+     
+       
+     50% {
+        top: 60px;
      }
      80% {
-         top: 130px;
-        
+         top: 90px;
      }
 
     100% {
